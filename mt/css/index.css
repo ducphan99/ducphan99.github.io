@@ -1,0 +1,41 @@
+body{
+	background-color: 	#461B7E;
+}
+table {
+	margin-left: 650px;
+	height: 300px;
+	width: 300px;
+	margin-top: 200px;
+}
+.duc input{
+	width: 300px;
+	height: 50px;
+	padding-top: 0;
+}
+.btvn{
+	height: 50px;
+	background-color: #52D017;
+	width: 50px;
+	 -moz-box-shadow: 3px 3px 5px 0px #666;
+    -webkit-box-shadow: 3px 3px 5px 0px #666;
+    box-shadow: 3px 3px 5px 0px #666;
+}
+.btvn:hover{
+	background-color: red;
+}
+.zero{
+	width: 115px;
+	height: 50px;
+	background-color: #52D017;
+}
+.zero:hover {
+	background-color: red;
+}
+.btvn1{
+	width: 50px;
+	height: 110px;
+	background-color: #52D017;
+}
+.btvn1:hover{
+background-color: red;
+}
