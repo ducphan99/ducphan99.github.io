@@ -1,0 +1,339 @@
+
+/* sreach */ 
+.sreach{
+  margin-left: 40%;
+} 
+.sreach input{
+  height: 20%;
+}
+/*duc*/
+.duc{
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  margin-top: 5%
+}
+.sach1{
+  grid-column:1/5;
+}
+.sach1 h1{
+  text-align: center;
+  color:  #87CEEB;
+}
+/*hiệu ứng duc */
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,800);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+.snip1401 {
+  font-family: 'Playfair Display', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 230px;
+  max-width: 315px;
+  max-height: 220px;
+  width: 100%;
+  color: #000000;
+  text-align: right;
+  font-size: 16px;
+  background-color: #000000;
+}
+.snip1401 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.snip1401 img {
+  max-width: 100%;
+  backface-visibility: hidden;
+}
+.snip1401 figcaption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  opacity: 1;
+  padding: 30px 0 30px 10px;
+  background-color: #ffffff;
+  width: 40%;
+  -webkit-transform: translateX(150%);
+  transform: translateX(150%);
+}
+.snip1401 figcaption:before {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 100%;
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 120px 120px 120px 0;
+  border-color: transparent #ffffff transparent transparent;
+}
+.snip1401:after {
+  position: absolute;
+  bottom: 50%;
+  right: 40%;
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 120px 120px 0 120px;
+  border-color: rgba(255, 255, 255, 0.5) transparent transparent transparent;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.snip1401 h3,
+.snip1401 p {
+  line-height: 1.5em;
+  -webkit-transform: translateX(-30px);
+  transform: translateX(-30px);
+  margin: 0;
+}
+.snip1401 h3 {
+  margin: 0 0 5px;
+  line-height: 1.1em;
+  font-weight: 900;
+  font-size: 1.4em;
+  opacity: 0.75;
+}
+.snip1401 p {
+  font-size: 0.8em;
+}
+.snip1401 i {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px 30px;
+  font-size: 44px;
+  color: #ffffff;
+  opacity: 0;
+}
+.snip1401 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.snip1401:hover img,
+.snip1401.hover img {
+  zoom: 1;
+  filter: alpha(opacity=50);
+  -webkit-opacity: 0.5;
+  opacity: 0.5;
+}
+.snip1401:hover:after,
+.snip1401.hover:after,
+.snip1401:hover figcaption,
+.snip1401.hover figcaption,
+.snip1401:hover i,
+.snip1401.hover i {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  opacity: 1;
+}
+/*wraper*/ 
+.wraper{  
+  display:grid;   
+  grid-template-columns: 25% 25% 25% 25%;   
+  margin-left: 8%;   
+  margin-right: 8%;   
+  margin-top: 10%; 
+  grid-column-gap: 1%;
+  grid-row-gap: 2%;
+} 
+.sidebar1{   
+  grid-column: 1/5; 
+} 
+.sidebar1 span{  
+  font-size: 40px;
+  color: #7FFF00;
+}
+/*hiệu ứng hover ảnh wraper*/
+.snip1577 {
+  font-family: 'Montserrat', Arial, sans-serif;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin: 10px;  
+  color: #fff;
+  text-align: left;
+  font-size: 16px;
+  background: #000;
+}
+
+.snip1577 *,
+.snip1577:before,
+.snip1577:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.snip1577 img {
+  backface-visibility: hidden;
+  vertical-align: top;
+}
+
+.snip1577:before,
+.snip1577:after {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  content: '';
+  background-color: #fff;
+  z-index: 1;
+  opacity: 0;
+}
+
+.snip1577:before {
+  width: 0;
+  height: 1px;
+}
+
+.snip1577:after {
+  height: 0;
+  width: 1px;
+}
+
+.snip1577 figcaption {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 15px 20px;
+}
+
+.snip1577 h3,
+.snip1577 h4 {
+  margin: 0;
+  font-size: 1.1em;
+  font-weight: normal;
+  opacity: 0;
+}
+
+.snip1577 h4 {
+  font-size: .8em;
+  text-transform: uppercase;
+}
+
+.snip1577 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.snip1577:hover img,
+.snip1577.hover img {
+  zoom: 1;
+  filter: alpha(opacity=20);
+  -webkit-opacity: 0.2;
+  opacity: 0.2;
+}
+
+.snip1577:hover:before,
+.snip1577.hover:before,
+.snip1577:hover:after,
+.snip1577.hover:after {
+  opacity: 1;
+  -webkit-transition-delay: 0.25s;
+  transition-delay: 0.25s;
+}
+
+.snip1577:hover:before,
+.snip1577.hover:before {
+  width: 40px;
+}
+
+.snip1577:hover:after,
+.snip1577.hover:after {
+  height: 40px;
+}
+
+.snip1577:hover h3,
+.snip1577.hover h3,
+.snip1577:hover h4,
+.snip1577.hover h4 {
+  opacity: 1;
+}
+
+.snip1577:hover h3,
+.snip1577.hover h3 {
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+.snip1577:hover h4,
+.snip1577.hover h4 {
+  -webkit-transition-delay: 0.35s;
+  transition-delay: 0.35s;
+}
+/*kết thúc hiệu ứng */
+/*wraper1*/
+.wraper1{
+  display:grid;   
+  grid-template-columns: 20% 20% 20% 20% 20%;   
+  margin-left: 8%;   
+  margin-right: 8%;   
+  margin-top: 5%; 
+  grid-column-gap: 1%;
+  grid-row-gap: 2%;
+}
+.sidebar01{
+  grid-column: 1/6;
+}
+.sidebar01 span{
+  font-size: 40px;
+  color: #8A2BE2;
+}
+.buton button {
+  width: 200px;
+  height: 30px;
+  background-color: white;
+  border-radius: 25px;
+}
+.buton button a{
+  text-decoration: none;
+  color: red;
+}
+.hello{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sidebar01 span {
+  animation-name:word;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes word {
+  0%{color: #FF1493}
+  25%{color:  #1E90FF}
+  50%{color:  #FAEBD7}
+  75%{color:  #00FFFF}
+  100%{color: red}
+}
+.sidebar1 span {
+  animation-name:word;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes word {
+  0%{color: #FF1493}
+  25%{color:  #1E90FF}
+  50%{color:  #FAEBD7}
+  75%{color:  #00FFFF}
+  100%{color: red}
+}
+.duc1:hover {
+  transform: scale(1.2);
+}

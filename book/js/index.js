@@ -1,0 +1,5 @@
+$('body').css('background','red')
+$('div').html('<span>this is a pen</span>')
+$('div').append('<span>this is a pen</span>')
+$('div').prepend('<span>this is a pen</span>')
+$('body').append('<img src="img/duc.jpg" alt="" />')
