@@ -1,0 +1,119 @@
+body{
+	font-family: inherit;
+
+}
+.img2 {
+	width: 30px;
+	height: 30px;
+}
+.titile{
+    margin-top: 10px;
+    margin-left: 180px;
+
+}
+.titile>h4>a{
+    font-size: 15px;
+    padding-left: 20px;
+}
+.titile>h4>i{
+    font-size: 15px;
+    padding-left: 20px;
+}
+.titile>h4>a{
+    text-decoration: none;
+    color: black;
+}
+.banneriphone{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 50% 50%;
+    margin-left: 200px;
+    margin-right: 200px;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.banneriphone1{
+    grid-row: 1/3;
+}
+ .titileapple{
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 20px;
+}
+.titileapple>h3{
+    animation-name: word;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes word{
+    0%{color: white;}
+    25%{color: red;}
+    50%{color: blue;}
+    75%{color: yellow;}
+    100%{color: aqua;}
+}
+
+.storeiphone{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    margin-left: 200px;
+    margin-right: 300px;
+}
+.storeiphone1{
+    background-color:lightgray;
+    height: 500px;
+    width: 200px;
+}
+.storeiphone1>ul{
+    list-style: none;
+}
+.storeiphone1>ul>li{
+    padding-top: 20px;
+}
+.storeiphone1>ul>li>a{
+    font-size: 12px;
+    color: black;
+}
+.storeiphone1>ul>li>a:hover {
+    color: red;
+}
+.menu>li{
+    font-size: 12px;
+}
+.storeiphone2{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: 25% 25% 25% 25%;
+    height: 1200px;
+    width: 1000px;
+}
+.storeiphone01>i{
+    font-size: 12px;
+    color: yellow;
+}
+.storeiphone01>span{
+    font-size: 12px;
+}
+.storeiphone01{
+    border: solid lightgray;
+	border-width: 1px;
+}
+.storeiphone01:hover{
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+}
+.footer{
+	background-color:  #231f20;
+	height: 250px;
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+}
+.footer01>ul{
+	list-style: none;
+}
+.footer01>ul>li{
+	padding-top: 10px;
+}
+.footer3>.footer01>img{
+	width: 220px;
+	margin-left: 38px;
+}
