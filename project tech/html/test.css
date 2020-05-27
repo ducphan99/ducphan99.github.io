@@ -1,0 +1,277 @@
+ body {
+    background-color: #4C4C4C;
+  } 
+  
+  /* .container {
+    font-size: 0;
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+  } */
+  
+  /* .card {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    height: 400px;
+    width: 600px;
+    /* */
+    /* Each "card" is set to 600x400px because that is the size of  the image, adjust as needed. Make sure the overflow is set to hidden or else when the img scales it will clip with the other images.
+    */ 
+  /* } */
+  
+  /* .img-container {
+    transition: transform .1s ease;
+  } */
+  
+  /* .img-container:hover {
+    transform: scale(1.1); */
+    /*
+    Change the scale value as much as you want to change the amount of zoom on hover.
+    */
+  /* } */
+  
+  /* .card img { */
+    /* opacity: .; */
+    /* transform: translate(0,0); */
+    /*
+    Change the opacity value to change how "faded" you want the image to appear when it is not hovered.
+    */
+    /* transition: opacity .25s ease-in-out; */
+  /* } */
+  
+  /* .card img:hover {
+    opacity: 1;
+  /* } */ 
+  img {
+    vertical-align: middle;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  /* .mySlides {
+    display: none;
+  } */
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  /* .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  /* .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  .row{
+    justify-content: center;
+    padding: 10px;
+  }
+   */
+  /* Position the "next button" to the right */
+  /* .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  } */
+  
+  /* On hover, add a black background color with a little bit see-through */
+  /* .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  } */
+  
+  /* Number text (1/3 etc) */
+  /* .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  } */
+  
+  /* Container for image text */
+  /* .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  } */
+  
+  /* .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  } */ 
+  
+  /* Six columns side by side */
+  /* .column {
+    padding: 10px;
+    width: 16.66%;
+  } */
+  
+  /* Add a transparency effect for thumnbail images */
+  /* .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  } */
+
+
+  /*phần tử phủ toàn màn hình*/
+/* #over {
+  display: none;
+  background: #000;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  z-index: 999;
+}
+a, a:visited, a:active{
+  text-decoration:none;
+} */
+/* lớp login - cửa sổ đăng nhập*/
+/* .login
+{
+  background-color: white;
+  height:423px;
+  width:1000px;
+  font-family:Verdana, Arial, Helvetica, sans-serif;
+  font-size:14px;
+  padding-bottom:5px;
+  display:none;
+  overflow:hidden;
+  position:absolute;
+  z-index:99999;/*đặt z-index để nó nổi bật và chồng lên phần tử khác trong trang*/
+  /* top:40%;
+  left:40%;
+  margin-left:-300px;
+} */
+  
+/* .login .login_title
+{
+  color:white;
+  font-size:16px;
+  padding:8px 0 5px 8px;
+  text-align:left;
+}
+
+.login-content label {
+  display: block;
+  padding-bottom: 7px;
+}
+
+.login-content span {
+  display: block;
+}
+.login-content
+{
+  padding-left:35px;
+  background-color:white;
+  margin-left:5px;
+  margin-right:5px;
+  height:auto;
+  padding-top:15px;
+  overflow:hidden;
+}
+
+.img-close {
+  margin-top:10px;
+  margin-right:5px
+}	
+
+  
+.boxbox{
+  margin-top: 20px;
+  width: 100%;
+  height: 50px;
+  background-color: red;
+  border-radius: 25px;
+  text-align: center;
+  font-size: 16px;
+  padding-top:12px;
+  color: white;
+}
+
+.boxbox:hover{
+  background-color: white;
+  border:solid 1px red;
+  color: red;
+
+}
+.word1>input{
+  width: 10%;
+} */ 
+
+/* .dialog {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity linear 0.2s;
+}
+
+.overlay-close {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: default;
+}
+
+.dialog:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.dialog-body {
+  width: 1000px;
+  height: 360px;
+  position: relative;
+  padding: 16px;
+  background-color: #fff;
+  border-radius: 25px;
+}
+
+.dialog-close-btn {
+  position: absolute;
+  top: 2px;
+  right: 6px;
+  text-decoration: none;
+  color: #333;
+}
+
+
+
+ */

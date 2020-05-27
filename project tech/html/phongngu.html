@@ -1,0 +1,2001 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phòng Ngủ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/phongngu.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div style="background-color: #dadada;" class="header-top ">
+        <div class="container">
+            <div style="font-size: 13px;" class="row">
+                <div style="margin-top: 3px;" class="col-sm-3"> <i style="font-size: 15px;"
+                        class="fas fa-mobile-alt"></i>&nbsp;&nbsp; Hottline : <a style="color: red;"
+                        href="tel:0392.831.499"> 0392.831.499</a></div>
+                <div style="margin-top: 3px;" class="col-sm-6 text-center">
+                    <marquee direction="left">CHÀO MỪNG BẠN ĐẾN VỚI HỆ THỐNG SIÊU THỊ SUNMAX</marquee>
+                </div>
+                <div style="margin-top: 3px;" class="text-right col-sm-3">Email :<span
+                        style="color: red;">nhokonhebi99@gmail.com</span></div>
+            </div>
+        </div>
+    </div>
+    <!-- end header -->
+    <div style="margin-top: 40px;" class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <a href="index.html"><img class="img-fluid logo" src="../img/logo1.png"></a>
+            </div>
+            <div style="text-align: center;" class="col-lg-6 col-md-5 col-sm-12">
+                <!-- <div class="search-box">  -->
+                <!-- <script type="text/javascript">
+              function search(){
+            var key = document.getElementById("key").value;
+            location.href="index.php?controller=Search&key="+key+"&p=1";
+            return false;
+            }
+          </script> -->
+                <div class="search-box">
+                    <form class="search-form" method="POST" action="">
+                        <input class="form-control" id="key" placeholder="Tìm Kiếm...." type="text">
+                        <button type="submit" class="btn btn-link search-btn"> <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div style="text-align: right;" class="cart col-sm-3">
+                <button class="btn btn-danger"><i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;&nbsp;<a
+                        style="color:white;" href=""> Giỏ Hàng (0) </a></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- end header -->
+    <!-- menu -->
+    <!-- menu -->
+    <div id="menu">
+        <div style="margin-top: 40px;" class="container">
+            <div class="row">
+                <div class="col-sm-12">
+
+                    <ul>
+                        <li><a href="index.html">TRANG CHỦ</a></li>
+                        <li style="text-transform: uppercase;"><a href="phongkhach.html"> Phòng Khách</a></li>
+                        <li style="text-transform: uppercase;"><a href="phongngu.html"> Phòng Ngủ</a></li>
+                        <li style="text-transform: uppercase;"><a href="phongbep.html"> Phòng Bếp</a></li>
+                        <li style="text-transform: uppercase;"><a href="phonglamviec.html"> Phòng Làm Việc</a></li>
+                        <li><a href="#">LIÊN HỆ</a></li>
+                        <li><a href="gioithieu.html">Giới Thiệu</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <!-- left -->
+            <div class="col-lg-3 col-md-4 col-sm-12">
+                <div class="menu-left">
+                    <div class="title">
+                        <i class="fas fa-tasks"></i>
+                        &nbsp;&nbsp;DANH MỤC SẢN PHẨM
+                    </div>
+                    <div class="content">
+                        <ul>
+                            <li onclick="changeProductList('livingroom1', this)"><a href="#"><i
+                                        class="fab fa-telegram-plane"></i>&nbsp;&nbsp;Phòng khách</a></li>
+                            <li onclick="changeProductList('kitchen1',this)"><a href="#"><i
+                                        class="fab fa-telegram-plane"></i>&nbsp;&nbsp;Phòng bếp</a></li>
+                            <li onclick="changeProductList('workroom1',this)"><a href="#"><i
+                                        class="fab fa-telegram-plane"></i>&nbsp;&nbsp;Phòng làm việc</a></li>
+                            <li onclick="changeProductList('exterior1',this)"><a href="#"><i
+                                        class="fab fa-telegram-plane"></i>&nbsp;&nbsp;Phòng Ngủ</a></li>
+                            <li onclick="changeProductList('decorations1',this)"><a href="#"><i
+                                        class="fab fa-telegram-plane"></i>&nbsp;&nbsp;Đồ trang trí</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="category-left">
+                    <div class="title">
+                        <i class="fas fa-star"></i>&nbsp;&nbsp;THƯƠNG HIỆU
+                    </div>
+                    <div class="content">
+                        <ul>
+                            <li><a href="#"><input type="checkbox" name="CAnova">&nbsp;&nbsp;&nbsp;Canifa</a></li>
+                            <li><a href="#"><input type="checkbox" name="CAnova">&nbsp;&nbsp;&nbsp;Canova</a></li>
+                            <li><a href="#"><input type="checkbox" name="CAnova">&nbsp;&nbsp;&nbsp;Hatatu</a></li>
+                            <li><a href="#"><input type="checkbox" name="CAnova">&nbsp;&nbsp;&nbsp;Hugo</a></li>
+                            <li><a href="#"><input type="checkbox" name="CAnova">&nbsp;&nbsp;&nbsp;Kimana</a></li>
+                            <li><a href="#"><input type="checkbox" name="CAnova">&nbsp;&nbsp;&nbsp;MLEH</a></li>
+                            <li><a href="#"><input type="checkbox" name="CAnova">&nbsp;&nbsp;&nbsp;Victory</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- end left -->
+            <div id="phongbep" class="col-lg-9 col-md-8 col-sm-12">
+
+
+                <div id="kitchen1" class="animation">
+                    <h3>PHÒNG BẾP</h3>
+
+                    <div class="container">
+                        <div class="row">
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="chitietsanpham.html"><img class="img-fluid" src="../img/pb1.jpg"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="chitietsanpham.html">Bàn ghế ăn mã XBA112</a>
+                                            </p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="chitietsanpham.html">Tùy
+                                                        Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid" src="../img/pb2.jpg"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế ăn mã XBA191</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid" src="../img/pb3.jpg"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế ăn mã XBA129</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid" src="../img/pb4.jpg"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế ăn mã XB200</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid" src="../img/pb5.jpg"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế ăn mã XBA185</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid" src="../img/pb6.jpg"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế ăn mã XBA8979</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid" src="../img/pb7.jpg"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế ăn mã XBA189</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid" src="../img/pb8.jpg"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế ăn mã XBA188</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid" src="../img/pb3.jpg"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế ăn mã XBA181 8979</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid" src="../img/pb5.jpg"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế ăn mã XBA180</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid" src="../img/pb6.jpg"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế ăn mã XBA181</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid" src="../img/pb1.jpg"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế ăn mã XBA181</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid" src="../img/pb6.jpg"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế ăn mã XBA191</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid" src="../img/pb5.jpg"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế ăn mã XBA191</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid" src="../img/pb3.jpg"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế ăn mã XBA191</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="livingroom1" class="animation">
+                    <h3>PHÒNG KHÁCH</h3>
+
+                    <div class="container">
+                        <div class="row">
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="chitietsanpham.html"><img class="img-fluid" src="../img/sale8.png"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="chitietsanpham.html">Bàn ghế phòng khách
+                                                    XBA112</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="chitietsanpham.html">Tùy
+                                                        Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid" src="../img/sale2.jpg"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế phòng khách XBA191</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid" src="../img/sale3.jpg"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế phòng khách XBA129</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid" src="../img/sale4.jpg"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế phòng khách XB200</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid" src="../img/sale5.jpg"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế phòng khách XBA185</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid" src="../img/sale6.jpg"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế phòng khách XBA8979</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid" src="../img/sale7.jpg"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế phòng khách XBA189</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid" src="../img/sofa11.jpg"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế phòng khách XBA188</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid" src="../img/284.jpg"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế phòng khách XBA181 8979</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid" src="../img/unnamed.jpg"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế phòng khách XBA180</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid" src="../img/sale10.jpg"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế phòng khách XBA181</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid" src="../img/sale11.jpg"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế phòng khách XBA181</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid" src="../img/15.png"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế phòng khách XBA191</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid" src="../img/16.jpg"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế phòng khách XBA191</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid" src="../img/pb3.jpg"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế phòng khách XBA191</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="workroom1" class="animation">
+                    <h3> PHÒNG LÀM VIỆC</h3>
+
+                    <div class="container">
+                        <div class="row">
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="chitietsanpham.html"><img class="img-fluid"
+                                                src="../img/workroom/1.png"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="chitietsanpham.html">Bàn ghế ăn mã XBA112</a>
+                                            </p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="chitietsanpham.html">Tùy
+                                                        Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid" src="../img/workroom/2.jpg"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế ăn mã XBA191</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid" src="../img/workroom/3.jpg"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế ăn mã XBA129</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid" src="../img/workroom/4.jpeg"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế ăn mã XB200</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid" src="../img/workroom/5.jpg"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế ăn mã XBA185</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid" src="../img/workroom/6.jpg"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế ăn mã XBA8979</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid" src="../img/workroom/7.jpg"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế ăn mã XBA189</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid" src="../img/workroom/8.jpg"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế ăn mã XBA188</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid" src="../img/workroom/9.jpg"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế ăn mã XBA181 8979</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid" src="../img/pb5.jpg"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế ăn mã XBA180</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid" src="../img/pb6.jpg"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế ăn mã XBA181</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid" src="../img/pb1.jpg"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế ăn mã XBA181</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid" src="../img/pb6.jpg"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế ăn mã XBA191</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid" src="../img/pb5.jpg"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế ăn mã XBA191</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid" src="../img/pb3.jpg"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế ăn mã XBA191</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="exterior1" class="animation">
+                    <h3>Phòng Ngủ</h3>
+
+                    <div class="container">
+                        <div class="row">
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="chitietsanpham.html"><img class="img-fluid"
+                                                src="../img/bedroom/1.jpg"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="chitietsanpham.html">Bàn ghế ăn mã XBA112</a>
+                                            </p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="chitietsanpham.html">Tùy
+                                                        Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid" src="../img/bedroom/2.jpg"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế ăn mã XBA191</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid" src="../img/bedroom/3.jpg"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế ăn mã XBA129</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid" src="../img/bedroom/4.jpg"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế ăn mã XB200</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid" src="../img/bedroom/5.jpg"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế ăn mã XBA185</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid" src="../img/bedroom/6.jpg"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế ăn mã XBA8979</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid" src="../img/bedroom/7.jpg"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế ăn mã XBA189</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid" src="../img/bedroom/8.jpg"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế ăn mã XBA188</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid" src="../img/bedroom/9.jpg"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế ăn mã XBA181 8979</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid" src="../img/bedroom/10.jpg"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế ăn mã XBA180</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid" src="../img/bedroom/11.jpg"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế ăn mã XBA181</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid" src="../img/bedroom/12.jpg"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế ăn mã XBA181</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid" src="../img/bedroom/13.jpg"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế ăn mã XBA191</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid" src="../img/bedroom/14.jpg"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế ăn mã XBA191</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid" src="../img/bedroom/15.jpg"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế ăn mã XBA191</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="decorations1" class="animation">
+                    <h3>ĐỒ TRANG TRÍ</h3>
+
+                    <div class="container">
+                        <div class="row">
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="chitietsanpham.html"><img class="img-fluid"
+                                                src="../img/Product/15755232861571928925ngu8.jpg"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="chitietsanpham.html">Bàn ghế ăn mã XBA112</a>
+                                            </p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="chitietsanpham.html">Tùy
+                                                        Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="chitietsanpham.html"><img class="img-fluid"
+                                                src="../img/Product/15755232861571928925ngu8.jpg"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế ăn mã XBA191</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid" src="../img/Product/1575292525ngu8.jpg"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế ăn mã XBA129</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid"
+                                                src="../img/Product/15752957841571937242ban1.jpg"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế ăn mã XB200</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid"
+                                                src="../img/Product//15752959641571417334khach1.jpg"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế ăn mã XBA185</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid"
+                                                src="../img/Product/15753573281571938923plv4.PNG"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế ăn mã XBA8979</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid"
+                                                src="../img/Product/15753573661571548293ch47.jpg"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế ăn mã XBA189</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid"
+                                                src="../img/Product/15755216821571938380plv8.PNG"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế ăn mã XBA188</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid"
+                                                src="../img/Product/15755219351571940034lv13.PNG"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế ăn mã XBA181 8979</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid"
+                                                src="../img/Product/15755221221571939934lv12.PNG"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế ăn mã XBA180</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid"
+                                                src="../img/Product/15755222541571940034lv13.PNG"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế ăn mã XBA181</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid"
+                                                src="../img/Product/15755223691571939116plv2.PNG"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế ăn mã XBA181</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid"
+                                                src="../img/Product/15755224971571938810plv5.PNG"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế ăn mã XBA191</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid"
+                                                src="../img/Product/15755225491571938642plv6.PNG"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế ăn mã XBA191</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div id="bep" class="col-lg-4 col-md-4 col-sm-6 ">
+                                <div class=" text-center">
+                                    <div class="img1">
+                                        <a href="#"><img class="img-fluid"
+                                                src="../img/Product/15755225881571938997plv3.PNG"></a>
+                                        <div class="content">
+                                            <p id="title-content"><a href="#">Bàn ghế ăn mã XBA191</a></p>
+
+                                            <p>Giá bán: <span>32.990.000đ</span></p>
+                                            <div class="txt">
+                                                <p>Kích thước RxSxC (cm): 217x189x110</p>
+                                                <p>Xuất xứ:Trung Quốc</p>
+                                                <p> Chất liệu: Gỗ công nghiệp, phủ melamin </p>
+                                                <p>Bảo hành: Bảo hành 2 năm...</p>
+                                                <br>
+                                                <span><a href="#">Tùy Chọn</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a
+                                                        class="dialog-btn" href="#my-dialog">Xem Nhanh</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- end phòng bếp -->
+        </div>
+    </div>
+    <!-- button group -->
+
+    <hr>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 col-sm-12">
+                    <div>
+                        <p class="title"><i style="color: #f62d3e;;" class="fas fa-tasks"></i>
+                            &nbsp;&nbsp;HỆ THỐNG SIÊU THỊ NỘI THẤT</p>
+                        <div class="content">
+                            <p style="font-weight: bold;color: white;"><i
+                                    class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;&nbsp;Sunmax Triều Khúc</p>
+                            <p>Địa chỉ: 46 / 68 Triều Khúc - Thanh Xuân - Hà Nội</p>
+                            <p><a href="tel:0858858813">Hotline: 0858.858.813</a></p>
+                            <p style="font-weight: bold;color: white;"><i
+                                    class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;&nbsp;Sunmax Nguyễn Trãi</p>
+                            <p>Địa chỉ: Đại Học Công Nghệ GTVT - Thanh Xuân - Hà Nội</p>
+                            <p><a href="tel:0858858826">Hotline: 0858.858.826</a></p>
+                            <p style="font-weight: bold; color: white;"><i
+                                    class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;&nbsp;Sunmax Nam Định</p>
+                            <p>Địa chỉ: 90 Lê Hồng Phong - Phường Vị Hoàng - Nam Định</p>
+                            <p><a href="">Hotline: 0963.873.812</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-sm-12">
+                    <p class="title"><i style="color: #f62d3e;" class="fas fa-tasks"></i>&nbsp;
+                        CHÍNH SÁCH</p>
+                    <div class="content123">
+                        <p>
+                            <a href="#">
+                                <i class="fas fa-stop"></i>&nbsp;&nbsp;&nbsp;Chính sách thanh toán
+                            </a>
+                        </p>
+                        <p>
+                            <a href="#">
+                                <i class="fas fa-stop"></i>&nbsp;&nbsp;&nbsp;Chính sách vận chuyển
+                            </a>
+                        </p>
+                        <p>
+                            <a href="#">
+                                <i class="fas fa-stop"></i>&nbsp;&nbsp;&nbsp;Chính sách đổi trả
+                            </a>
+                        </p>
+                        <p>
+                            <a href="#">
+                                <i class="fas fa-stop"></i>&nbsp;&nbsp;&nbsp;Chính sách bảo hành
+                            </a>
+                        </p>
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-sm-12">
+                    <p class="title"><i style="color: #f62d3e;" class="fas fa-tasks"></i>&nbsp;
+                        ĐIỀU KHOẢN</p>
+                    <div class="content123">
+                        <p>
+                            <a href="#">
+                                <i class="fas fa-stop"></i>&nbsp;&nbsp;&nbsp;Điều khoản sử dụng
+                            </a>
+                        </p>
+                        <p><a href="#">
+                                <i class="fas fa-stop"></i>&nbsp;&nbsp;&nbsp;Điều khoản giao dịch
+                            </a></p>
+                        <p><a href="#">
+                                <i class="fas fa-stop"></i>&nbsp;&nbsp;&nbsp;Dịch vụ tiện ích</a></p>
+                        <p><a href="#">
+                                <i class="fas fa-stop"></i>&nbsp;&nbsp;&nbsp;Quyền sở hữu trí tuệ
+                            </a></p>
+
+
+
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-6 col-sm-12">
+                    <p class="title"><i style="color: #f62d3e;" class="fas fa-tasks"></i>&nbsp;
+                        HƯỚNG DẪN</p>
+                    <div class="content123">
+                        <p>
+                            <a href="#">
+                                <i class="fas fa-stop"></i>&nbsp;&nbsp;Hướng dẫn mua hàng
+                            </a>
+                        </p>
+                        <p><a href="#">
+                                <i class="fas fa-stop"></i>&nbsp;&nbsp;Giao nhận và thanh toán
+                            </a></p>
+                        <p><a href="#">
+                                <i class="fas fa-stop"></i>&nbsp;&nbsp;Đổi trả và bảo hành</a></p>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+    <div id="footer-bot" class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                &copy; Bản quyền thuộc về <span> ĐN-Shop</span> | Cung cấp bởi <span>SUNMAX</span>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="dialog overlay" id="my-dialog">
+        <a href="#" class="overlay-close"></a>
+
+        <div class="dialog-body">
+            <a class="dialog-close-btn" href="#" style="margin-right: 20px;font-size: 40px">&times;</a>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="../img/pb1.jpg" width="100%" style="margin-top: 10px;" alt="">
+                    </div>
+                    <div class="col-sm-5" style="margin-top: 20px;">
+                        <p style="font-size: 25px;">Bàn ghế ăn mã XBA112</p>
+                        <p style="font-size: 18px; margin-top: 10px;">Mã sản phẩm: <strong
+                                style="color: red;">SP0291</strong> </p>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        <p style="color: red; font-size: 20px; margin-top: 10px;"><strong>34,200,000</strong></p>
+                        <P class="word">Mặt bàn: 1600 x 815 x 30mm, Đôn Sofa Phòng khách da thật 9029: 3000x1800x1000
+                            mm, Kệ Sách: 3000x900x2900 mm</P>
+                        <p class="word1"><strong> Số Lượng: </strong><input type="number" min="1" max=""></p>
+                        <a href="tienhanhthanhtoan.html">
+                            <div class="boxbox">
+                                <strong> ĐẶT HÀNG</strong>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="../js/phongbep.js"></script>
+        <script src="../library/jquery.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
